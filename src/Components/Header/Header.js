@@ -14,7 +14,7 @@ const HeaderMe = styled.header`
   margin: auto;
   padding-top: 30px;
   animation: moveleft 1s ease-in-out;
-  background-color: rgb(18 26 44);
+  background-color: rgb(25, 33, 56);
 
   @media (min-width: 1000px) {
     margin-top: 60px;
@@ -65,13 +65,13 @@ const Name = styled.p`
   color: #beff6b;
   font-weight: 800;
   letter-spacing: 1.3px;
-  transition: 1s;
-  width: 130px;
+  width: 170px;
 
   @media (min-width: 1000px) {
     font-size: 65px;
     font-family: "Roboto", sans-serif;
     color: #5ee4e8;
+    width: 300px;
   }
 `;
 
@@ -82,7 +82,6 @@ const Frontend = styled.p`
   font-weight: 800;
   margin-top: 10px;
   letter-spacing: 1.5px;
-  transition: 1s;
 
   @media (min-width: 1000px) {
     font-family: "Montserrat", sans-serif;
@@ -117,7 +116,7 @@ const SectionTwo = styled.section`
 const SectionRedes = styled.section`
   width: 150px;
   border-radius: 5px;
-  background-color: rgba(95, 99, 114, 0.5);
+  background-color: rgb(36, 51, 86);
   display: flex;
   justify-content: space-around;
   align-items: center;
