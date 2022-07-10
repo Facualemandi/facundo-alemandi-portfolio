@@ -17,7 +17,8 @@ const Nav = styled.nav`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(45 56 88);
+  background-color: ${({ valor }) => (!valor ? "rgb(70 84 126)" : "#d2d3d4")};
+  transition: 0.5s;
   max-height: 60px;
   position: fixed;
   bottom: 0px;
@@ -48,7 +49,8 @@ const ContainerMenu = styled.section`
   position: fixed;
   transition: 0.5s;
   bottom: ${({ isOpen }) => (!isOpen ? "-100px" : "59px")};
-  background-color: rgb(70 84 126);
+  background-color: ${({ valor }) => (!valor ? "rgb(30, 45, 78)" : "#959696")};
+  transition: 0.5s;
 `;
 
 const Li = styled.li`
@@ -82,7 +84,7 @@ const MenuBottom = ({ handleAbout, handleSkills, handleProject }) => {
 
   return (
     <>
-      <ContainerMenu isOpen={isOpen}>
+      <ContainerMenu isOpen={isOpen} valor={theme}> 
         <ul>
           <Li onClick={handleSkills}>
             <Icons2 /> Tecnologías
@@ -96,7 +98,7 @@ const MenuBottom = ({ handleAbout, handleSkills, handleProject }) => {
           </Li>
         </ul>
       </ContainerMenu>
-      <Nav>
+      <Nav valor={theme}>
         <Container>
           {theme && <IconsMode alt="Dark" src={Light} onClick={changeTheme} />}
           {!theme && <IconsMode alt="Dark" src={Dark} onClick={changeTheme} />}

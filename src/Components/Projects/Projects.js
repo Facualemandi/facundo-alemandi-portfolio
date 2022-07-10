@@ -6,13 +6,17 @@ import Alfareria from "../../Images/project1.png";
 import Countryes from "../../Images/ApiCountry.png";
 import MercadoLibre from "../../Images/project3.png";
 import { VscDebugBreakpointData } from "react-icons/vsc";
+import { useThemeMode } from "../../Context/themeContext";
 
 const Main = styled.main`
   height: auto;
-  background-color: rgb(18 26 44);
+  background-color: ${({ valor }) => (!valor ? "rgb(18 26 44)" : "#f7f7f7")};
+  transition: 0.5s;
+  padding-bottom: 65px;
 `;
 const H2 = styled.p`
-  color: #5af5ff;
+  color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5;")};
+  transition: 0.5s;
   font-size: 26px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -47,13 +51,14 @@ const SectionOne = styled.section`
 
 const Ul = styled.ul`
   margin-bottom: 15px;
+  color: ${({ valor }) => (!valor ? "white" : "black")};
+  transition: 0.5s;
 `;
 
 const Li = styled.li`
   list-style: none;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: white;
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -111,14 +116,16 @@ const NameProject = styled.p`
 `;
 
 const Projects = () => {
+  const { theme } = useThemeMode();
+
   return (
     <>
-      <Main>
-        <H2> Proyectos 📚</H2>
+      <Main valor={theme}>
+        <H2 valor={theme}> Proyectos 📚</H2>
 
         <ContainerDesktop>
           <SectionOne>
-            <Ul>
+            <Ul valor={theme}>
               <Li>
                 <Point /> E-Commerce
               </Li>
@@ -142,7 +149,7 @@ const Projects = () => {
           </SectionOne>
 
           <SectionOne>
-            <Ul>
+            <Ul valor={theme}>
               <Li>
                 <Point /> E-Commerce
               </Li>
@@ -166,7 +173,7 @@ const Projects = () => {
           </SectionOne>
 
           <SectionOne>
-            <Ul>
+            <Ul valor={theme}>
               <Li>
                 <Point /> Proyecto personal
               </Li>
@@ -190,7 +197,7 @@ const Projects = () => {
           </SectionOne>
 
           <SectionOne>
-            <Ul>
+            <Ul valor={theme}>
               <Li>
                 <Point /> Buscador de países
               </Li>
@@ -214,7 +221,7 @@ const Projects = () => {
           </SectionOne>
 
           <SectionOne>
-            <Ul>
+            <Ul valor={theme}>
               <Li>
                 <Point /> Copia de Mercado Libre
               </Li>
