@@ -4,7 +4,7 @@ import { useThemeMode } from "../../Context/themeContext";
 
 const Main = styled.main`
   height: auto;
-  background-color: ${({ valor }) => (!valor ? "rgb(18 26 44)" : "white")};
+  background-color: ${({ valor }) => (!valor ? "rgb(18 26 44)" : "#f7f7f7")};
   transition: 0.5s;
 `;
 
@@ -24,7 +24,7 @@ const H2 = styled.h2`
   margin: auto;
   letter-spacing: 3px;
   color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5")};
-  transition: 0.5;
+  transition: 0.5s;
 
   @media (min-width: 800px) {
     width: 65vw;
@@ -48,6 +48,7 @@ const Parraagraph = styled.p`
 `;
 const Bold = styled.b`
   color: ${({ valor }) => (!valor ? "#66c7ff" : "#ff7cbe")};
+  transition: 0.5s;
 `;
 
 export const AboutMe = () => {

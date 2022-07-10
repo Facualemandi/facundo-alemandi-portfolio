@@ -6,6 +6,7 @@ import Twitter from "../../Images/Twitter-logo.png";
 import GitHub from "../../Images/github.png";
 import { FcBusinessContact } from "react-icons/fc";
 import NavDesktop from "./NavDesktop";
+import { useThemeMode } from "../../Context/themeContext";
 
 const HeaderMe = styled.header`
   display: flex;
@@ -14,7 +15,8 @@ const HeaderMe = styled.header`
   margin: auto;
   padding-top: 30px;
   animation: moveleft 1s ease-in-out;
-  background-color: rgb(25, 33, 56);
+  background-color: ${({ valor }) => (!valor ? "rgb(25, 33, 56)" : "#e6e7e8")};
+  transition: 0.5s;
 
   @media (min-width: 1000px) {
     margin-top: 60px;
@@ -62,10 +64,11 @@ const ImgFacundo = styled.img`
 const Name = styled.p`
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  color: #beff6b;
   font-weight: 800;
   letter-spacing: 1.3px;
   width: 170px;
+  color: ${({ valor }) => (!valor ? "#beff6b" : "rgb(42, 111, 241);")};
+  transition: 0.5s;
 
   @media (min-width: 1000px) {
     font-size: 65px;
@@ -77,11 +80,12 @@ const Name = styled.p`
 
 const Frontend = styled.p`
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: #bfff6bc5;
+  font-size: 20px;
   font-weight: 800;
   margin-top: 10px;
   letter-spacing: 1.5px;
+  color: ${({ valor }) => (!valor ? "#beff6b" : "rgb(42, 111, 241);")};
+  transition: 0.5s;
 
   @media (min-width: 1000px) {
     font-family: "Montserrat", sans-serif;
@@ -116,7 +120,8 @@ const SectionTwo = styled.section`
 const SectionRedes = styled.section`
   width: 150px;
   border-radius: 5px;
-  background-color: rgb(36, 51, 86);
+  background-color: ${({ valor }) => (!valor ? "rgb(36, 51, 86)" : "#d2d3d4")};
+  transition: 0.5s;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -164,15 +169,18 @@ const ButtomDesktop = styled.button`
 `;
 
 const Header = () => {
+  const { theme } = useThemeMode();
+
   return (
     <>
       <NavDesktop />
-      <HeaderMe>
+
+      <HeaderMe valor={theme}>
         <SectionOne>
           <ImgFacundo alt="" src={Facundo} />
           <SectionMe>
-            <Name>Facundo Alemandi</Name>
-            <Frontend>Frontend Developer</Frontend>
+            <Name valor={theme}>Facundo Alemandi</Name>
+            <Frontend valor={theme}>Frontend Developer</Frontend>
             <ButtomDesktop>
               Contactarme <IconContact />
             </ButtomDesktop>
@@ -180,7 +188,7 @@ const Header = () => {
         </SectionOne>
 
         <SectionTwo>
-          <SectionRedes>
+          <SectionRedes valor={theme}>
             <ImgRedes alt="" src={Linkedin} />
             <ImgRedes alt="" src={Twitter} />
             <ImgRedes alt="" src={GitHub} />
