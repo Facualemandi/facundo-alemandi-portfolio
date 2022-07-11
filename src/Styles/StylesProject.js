@@ -9,6 +9,7 @@ const Main = styled.main`
   background-color: ${({ valor }) => (!valor ? "rgb(18 26 44)" : "#f7f7f7")};
   transition: 0.5s;
   padding-bottom: 65px;
+  z-index: 50;
 `;
 const H2 = styled.p`
   color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5;")};
@@ -148,12 +149,13 @@ const GitDeploy = styled.p`
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 5px;
+  letter-spacing: 1px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgba(68, 68, 68, 0.393);
+  background-color: rgba(0, 0, 0, 0.705);
   margin-top: 10px;
   width: max-content;
 `;
@@ -178,6 +180,10 @@ const DeployYGithub = styled.section`
   justify-content: center;
   align-items: center;
 `;
+
+const LinkToDeploy = styled.a`
+  text-decoration: none;
+`;
 export const StylesProject = () => {
   return {
     Main,
@@ -194,5 +200,6 @@ export const StylesProject = () => {
     Icon,
     Icon1,
     DeployYGithub,
+    LinkToDeploy
   };
 };

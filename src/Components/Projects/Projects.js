@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Technology from "../../Images/Technology.png";
 import FakeStoreClothing from "../../Images/fake-store-clothing.png";
 import Alfareria from "../../Images/project1.png";
-import Countryes from "../../Images/ApiCountry.png";
 import MercadoLibre from "../../Images/project3.png";
 import { useThemeMode } from "../../Context/themeContext";
 import { StylesProject } from "../../Styles/StylesProject";
 import { useDeploy } from "../../Hooks/useDeploy";
+import Portfolio from "../../Images/Portfolio.png";
+import styled from "styled-components";
 
 const {
   Main,
@@ -23,6 +24,7 @@ const {
   Icon,
   Icon1,
   DeployYGithub,
+  LinkToDeploy,
 } = StylesProject();
 
 const Projects = ({ isProjects }) => {
@@ -72,7 +74,7 @@ const Projects = ({ isProjects }) => {
 
               <SectionDeploy value={projectOne}>
                 <DeployYGithub>
-                  <a
+                  <LinkToDeploy
                     href="https://facualemandi.github.io/technology-commerce/"
                     target={"_blank"}
                     rel="noreferrer"
@@ -81,8 +83,8 @@ const Projects = ({ isProjects }) => {
                       <Icon1 />
                       Deploy
                     </GitDeploy>
-                  </a>
-                  <a
+                  </LinkToDeploy>
+                  <LinkToDeploy
                     href=" https://github.com/Facualemandi/technology-commerce"
                     target={"_blank"}
                     rel="noreferrer"
@@ -90,7 +92,7 @@ const Projects = ({ isProjects }) => {
                     <GitDeploy>
                       <Icon /> GitHub
                     </GitDeploy>
-                  </a>
+                  </LinkToDeploy>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -98,26 +100,39 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li><Point /> E-Commerce </Li>
-              <Li><Point /> Proyecto personal</Li>
-              <Li><Point /> Hecho con React, React router</Li>
-              <Li><Point /> Vanilla Css</Li>
-              <Li><Point /> Base de datos hecha con Firebase</Li>
+              <Li>
+                <Point /> E-Commerce{" "}
+              </Li>
+              <Li>
+                <Point /> Proyecto personal
+              </Li>
+              <Li>
+                <Point /> Hecho con React, React router
+              </Li>
+              <Li>
+                <Point /> Vanilla Css
+              </Li>
+              <Li>
+                <Point /> Base de datos hecha con Firebase
+              </Li>
             </Ul>
 
             <ContainerDeploy onClick={twoProject}>
               <ImgOne alt="Technology-Commerce" src={FakeStoreClothing} />
               <SectionDeploy value={projectTwo}>
                 <DeployYGithub>
-                  <a
+                  <LinkToDeploy
                     href="https://facualemandi.github.io/fake-store-clothing/"
                     target={"_blank"}
                     rel="noreferrer"
                   >
-                    <GitDeploy> <Icon1 /> Deploy  </GitDeploy>
-                  </a>
+                    <GitDeploy>
+                      {" "}
+                      <Icon1 /> Deploy{" "}
+                    </GitDeploy>
+                  </LinkToDeploy>
 
-                  <a
+                  <LinkToDeploy
                     href="https://github.com/Facualemandi/fake-store-clothing"
                     target={"_blank"}
                     rel="noreferrer"
@@ -125,7 +140,7 @@ const Projects = ({ isProjects }) => {
                     <GitDeploy>
                       <Icon /> GitHub
                     </GitDeploy>
-                  </a>
+                  </LinkToDeploy>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -133,11 +148,21 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li> <Point /> Proyecto personal </Li>
-              <Li> <Point /> Hecho principalmente para Mobile. </Li>
-              <Li> <Point /> Listo para hacer pedidos por WhatsApp </Li>
-              <Li> <Point /> Hecho con React, React-router </Li>
-              <Li> <Point /> Vanilla Css </Li>
+              <Li>
+                <Point /> Proyecto personal
+              </Li>
+              <Li>
+                <Point /> Hecho principalmente para Mobile.
+              </Li>
+              <Li>
+                <Point /> Listo para hacer pedidos por WhatsApp
+              </Li>
+              <Li>
+                <Point /> Hecho con React, React-router
+              </Li>
+              <Li>
+                <Point /> Vanilla Css
+              </Li>
             </Ul>
 
             <ContainerDeploy onClick={threeProject}>
@@ -145,7 +170,7 @@ const Projects = ({ isProjects }) => {
 
               <SectionDeploy value={projectThree}>
                 <DeployYGithub>
-                  <a
+                  <LinkToDeploy
                     href="https://facualemandi.github.io/marketplace-alfareria/"
                     target={"_blank"}
                     rel="noreferrer"
@@ -154,8 +179,8 @@ const Projects = ({ isProjects }) => {
                       <Icon1 />
                       Deploy
                     </GitDeploy>
-                  </a>
-                  <a
+                  </LinkToDeploy>
+                  <LinkToDeploy
                     href="https://github.com/Facualemandi/marketplace-alfareria"
                     target={"_blank"}
                     rel="noreferrer"
@@ -163,7 +188,7 @@ const Projects = ({ isProjects }) => {
                     <GitDeploy>
                       <Icon /> GitHub
                     </GitDeploy>
-                  </a>
+                  </LinkToDeploy>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -171,20 +196,30 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li> <Point /> Buscador de países </Li>
-              <Li> <Point /> Consumo Api con Fetch </Li>
-              <Li> <Point /> Hecho para Mobile y Desktop </Li>
-              <Li> <Point /> Hecho con React, React-router </Li>
-              <Li> <Point /> Vanilla Css </Li>
+              <Li>
+                <Point /> PortFolio
+              </Li>
+              <Li>
+                <Point /> Figma
+              </Li>
+              <Li>
+                <Point /> Hecho para Mobile y Desktop
+              </Li>
+              <Li>
+                <Point /> Hecho con React, React-router
+              </Li>
+              <Li>
+                <Point /> Styled Components
+              </Li>
             </Ul>
 
             <ContainerDeploy onClick={fourProject}>
-              <ImgOne alt="Technology-Commerce" src={Countryes} />
+              <ImgOne alt="Portfolio" src={Portfolio} />
 
               <SectionDeploy value={projectFour}>
                 <DeployYGithub>
-                  <a
-                    href="https://facualemandi.github.io/api-country/"
+                  <LinkToDeploy
+                    href="https://facualemandi.github.io/facundo-alemandi-portfolio/"
                     target={"_blank"}
                     rel="noreferrer"
                   >
@@ -192,16 +227,16 @@ const Projects = ({ isProjects }) => {
                       <Icon1 />
                       Deploy
                     </GitDeploy>
-                  </a>
-                  <a
-                    href="https://github.com/Facualemandi/api-country"
+                  </LinkToDeploy>
+                  <LinkToDeploy
+                    href="https://github.com/Facualemandi/facundo-alemandi-portfolio"
                     target={"_blank"}
                     rel="noreferrer"
                   >
                     <GitDeploy>
                       <Icon /> GitHub
                     </GitDeploy>
-                  </a>
+                  </LinkToDeploy>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -209,11 +244,18 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li> <Point /> Copia de Mercado Libre </Li>
-              <Li> <Point /> Hecho con React </Li>
-              <Li> <Point /> Vanilla Css </Li>
-              <Li> <Point /> Hecho para Mobile y Desktop </Li>
-              <Li> <Point /> </Li>
+              <Li>
+                <Point /> Copia de Mercado Libre
+              </Li>
+              <Li>
+                <Point /> Hecho con React
+              </Li>
+              <Li>
+                <Point /> Vanilla Css
+              </Li>
+              <Li>
+                <Point /> Hecho para Mobile y Desktop{" "}
+              </Li>
             </Ul>
 
             <ContainerDeploy onClick={fiveProject}>
@@ -221,7 +263,7 @@ const Projects = ({ isProjects }) => {
 
               <SectionDeploy value={projectFive}>
                 <DeployYGithub>
-                  <a
+                  <LinkToDeploy
                     href="https://facualemandi.github.io/mercadolibre-dos-copy/"
                     target={"_blank"}
                     rel="noreferrer"
@@ -230,8 +272,8 @@ const Projects = ({ isProjects }) => {
                       <Icon1 />
                       Deploy
                     </GitDeploy>
-                  </a>
-                  <a
+                  </LinkToDeploy>
+                  <LinkToDeploy
                     href="https://github.com/Facualemandi/mercadolibre-dos-copy"
                     target={"_blank"}
                     rel="noreferrer"
@@ -239,7 +281,7 @@ const Projects = ({ isProjects }) => {
                     <GitDeploy>
                       <Icon /> GitHub
                     </GitDeploy>
-                  </a>
+                  </LinkToDeploy>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>

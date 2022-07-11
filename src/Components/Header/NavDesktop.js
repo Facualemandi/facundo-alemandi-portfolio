@@ -14,6 +14,7 @@ const Nav = styled.nav`
     background-color: rgb(28, 39, 67);
     position: fixed;
     top: 0px;
+    z-index: 100;
   }
 `;
 

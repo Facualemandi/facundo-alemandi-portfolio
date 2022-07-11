@@ -58,7 +58,7 @@ const Main = styled.main`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 70vw;
+  width: 80vw;
   padding: 10px;
   border-radius: 10px;
   background-color: ${({ value }) => (!value ? "rgb(70 84 126)" : "#8babff")};
@@ -172,7 +172,7 @@ const GoContact = styled(NavLink)`
 
 const ContianerRedes = styled.section`
   background-color: rgb(70 84 126);
-  width: 70vw;
+  width: 80vw;
   display: flex;
   justify-content: space-around;
   padding: 10px;
