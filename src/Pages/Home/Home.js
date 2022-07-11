@@ -6,7 +6,6 @@ import Projects from "../../Components/Projects/Projects";
 import Skills from "../../Components/Skills/Skills";
 import { useSmooth } from "../../Hooks/useSmooth";
 
-
 const Home = () => {
   const {
     isAboutMe,
@@ -19,7 +18,11 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header
+        handleAbout={handleAbout}
+        handleProject={handleProject}
+        handleSkills={handleSkills}
+      />
       <AboutMe isAboutMe={isAboutMe} />
       <Skills isSkills={isSkills} />
       <Projects isProjects={isProjects} />

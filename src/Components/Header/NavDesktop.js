@@ -68,21 +68,54 @@ const Li = styled.li`
   }
 `;
 
-const NavDesktop = () => {
+const LinkGo = styled.a`
+  @media (min-width: 1000px) {
+    height: max-content;
+
+    height: 25px;
+    overflow-y: hidden;
+
+    cursor: pointer;
+    &&:hover {
+      box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+      transition: 0.3s;
+    }
+  }
+`;
+
+const NavDesktop = ({ handleAbout, handleSkills, handleProject }) => {
   return (
     <>
       <Nav>
         <SectionTwo>
           <SectionRedes>
-            <ImgRedes alt="" src={Linkedin} />
-            <ImgRedes alt="" src={Twitter} />
-            <ImgRedes alt="" src={GitHub} />
+            <LinkGo
+              href="https://www.linkedin.com/in/facundo-alemandi-4714a7233/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <ImgRedes alt="" src={Linkedin} />
+            </LinkGo>
+            <LinkGo
+              href="https://twitter.com/AlemandiFacundo"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <ImgRedes alt="" src={Twitter} />
+            </LinkGo>
+            <LinkGo
+              href="https://github.com/Facualemandi"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <ImgRedes alt="" src={GitHub} />
+            </LinkGo>
           </SectionRedes>
 
           <Ul>
-            <Li>Skills</Li>
-            <Li>About Me</Li>
-            <Li>Projects</Li>
+            <Li onClick={handleSkills}>Skills</Li>
+            <Li onClick={handleAbout}>About Me</Li>
+            <Li onClick={handleProject}>Projects</Li>
           </Ul>
         </SectionTwo>
       </Nav>

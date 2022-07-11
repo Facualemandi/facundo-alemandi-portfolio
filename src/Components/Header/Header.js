@@ -141,7 +141,7 @@ const ButtonContact = styled.button`
   font-family: "Montserrat", sans-serif;
   border-radius: 7px;
   color: white;
-  padding: 5px;
+  padding: 7px;
 `;
 
 const IconContact = styled(FcBusinessContact)`
@@ -174,12 +174,16 @@ const GoContact = styled(NavLink)`
   text-decoration: none;
 `;
 
-const Header = () => {
+const Header = ({ handleAbout, handleSkills, handleProject }) => {
   const { theme } = useThemeMode();
 
   return (
     <>
-      <NavDesktop />
+      <NavDesktop
+        handleAbout={handleAbout}
+        handleProject={handleProject}
+        handleSkills={handleSkills}
+      />
 
       <HeaderMe valor={theme}>
         <SectionOne>
@@ -187,9 +191,11 @@ const Header = () => {
           <SectionMe>
             <Name valor={theme}>Facundo Alemandi</Name>
             <Frontend valor={theme}>Frontend Developer</Frontend>
-            <ButtomDesktop>
-              Contactarme <IconContact />
-            </ButtomDesktop>
+            <GoContact to={"/Contact"}>
+              <ButtomDesktop>
+                Contactarme <IconContact />
+              </ButtomDesktop>
+            </GoContact>
           </SectionMe>
         </SectionOne>
 

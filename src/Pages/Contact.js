@@ -188,7 +188,14 @@ const ImgRedes = styled.img`
   width: 45px;
   height: 45px;
   border-radius: 5px;
+`;
+
+const LinkGo = styled.a`
   @media (min-width: 1000px) {
+    height:max-content;
+    height: 45px;
+    overflow-y: hidden;
+
     cursor: pointer;
     &&:hover {
       box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
@@ -266,10 +273,37 @@ const Contact = () => {
         </Form>
 
         <ContianerRedes>
-          <ImgRedes alt="Linkedin" src={Linkedin} />
-          <ImgRedes alt="Twitter" src={Twitter} />
-          <ImgRedes alt="GitHub" src={GitHub} />
-          <ImgRedes alt="Instagram" src={Instagram} />
+          <LinkGo
+            href="https://www.linkedin.com/in/facundo-alemandi-4714a7233/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <ImgRedes alt="Linkedin" src={Linkedin} />
+          </LinkGo>
+
+          <LinkGo
+            href="https://twitter.com/AlemandiFacundo"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <ImgRedes alt="Twitter" src={Twitter} />
+          </LinkGo>
+
+          <LinkGo
+            href="https://github.com/Facualemandi"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <ImgRedes alt="GitHub" src={GitHub} />
+          </LinkGo>
+
+          <LinkGo
+            href="https://www.instagram.com/facu_alemandi/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <ImgRedes alt="Instagram" src={Instagram} />
+          </LinkGo>
         </ContianerRedes>
 
         <GoContact to={"/"}>
