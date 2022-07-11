@@ -8,6 +8,7 @@ import { FcPhoneAndroid } from "react-icons/fc";
 import { FcFlowChart } from "react-icons/fc";
 import Hamburger from "hamburger-react";
 import { useThemeMode } from "../../Context/themeContext";
+import { NavLink } from "react-router-dom";
 
 const Nav = styled.nav`
   height: 70px;
@@ -22,9 +23,6 @@ const Nav = styled.nav`
   max-height: 60px;
   position: fixed;
   bottom: 0px;
-  @media (min-width: 1000px) {
-    display: none;
-  }
 `;
 
 const Container = styled.section`
@@ -54,9 +52,6 @@ const ContainerMenu = styled.section`
   bottom: ${({ isOpen }) => (!isOpen ? "-100px" : "59px")};
   background-color: ${({ valor }) => (!valor ? "rgb(30, 45, 78)" : "#959696")};
   transition: 0.5s;
-  @media (min-width: 1000px) {
-    display: none;
-  }
 `;
 
 const Li = styled.li`
@@ -109,7 +104,10 @@ const MenuBottom = ({ handleAbout, handleSkills, handleProject }) => {
           {theme && <IconsMode alt="Dark" src={Light} onClick={changeTheme} />}
           {!theme && <IconsMode alt="Dark" src={Dark} onClick={changeTheme} />}
 
-          <BtnContact />
+          <NavLink to={"/Contact"}>
+            <BtnContact />
+          </NavLink>
+          
           <Hamburger
             size={50}
             rounded

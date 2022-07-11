@@ -51,16 +51,17 @@ const Bold = styled.b`
   transition: 0.5s;
 `;
 
-export const AboutMe = () => {
+export const AboutMe = ({ isAboutMe }) => {
   const { theme } = useThemeMode();
 
-  console.log(theme);
 
   return (
     <>
       <Main valor={theme}>
         <SectionOne>
-          <H2 valor={theme}>Sobre Mi 📗</H2>
+          <H2 valor={theme} ref={isAboutMe}>
+            Sobre Mi 📗
+          </H2>
           <Parraagraph valor={theme}>
             Me llamo <Bold valor={theme}>Facundo Alemandi</Bold>, soy de{" "}
             <Bold valor={theme}>Argentina, Córdoba Capital</Bold> y Me

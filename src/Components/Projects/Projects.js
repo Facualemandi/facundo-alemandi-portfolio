@@ -185,7 +185,7 @@ const DeployYGithub = styled.section`
   align-items: center;
 `;
 
-const Projects = () => {
+const Projects = ({isProjects}) => {
   const { theme } = useThemeMode();
   const [projectOne, setProjectOne] = useState(false);
   const [projectTwo, setProjectTwo] = useState(false);
@@ -207,7 +207,7 @@ const Projects = () => {
   return (
     <>
       <Main valor={theme}>
-        <H2 valor={theme}> Proyectos 📚</H2>
+        <H2 valor={theme} ref={isProjects}> Proyectos 📚</H2>
 
         <ContainerDesktop>
           <SectionOne>

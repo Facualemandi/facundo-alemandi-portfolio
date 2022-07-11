@@ -6,6 +6,7 @@ import Projects from "../../Components/Projects/Projects";
 import Skills from "../../Components/Skills/Skills";
 import { useSmooth } from "../../Hooks/useSmooth";
 
+
 const Home = () => {
   const {
     isAboutMe,

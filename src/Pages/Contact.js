@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MenuBottom from "../Components/MenuBottom/MenuBottom";
 import { useThemeMode } from "../Context/themeContext";
 import { useForm } from "../Hooks/useForm";
+import { NavLink } from "react-router-dom";
 
 const initialForm = {
   name: "",
@@ -134,6 +135,7 @@ const SectionReturn = styled.section`
   @media (min-width: 1000px) {
     display: block;
     width: 50vw;
+    color: white;
   }
 `;
 const Return = styled.p`
@@ -151,6 +153,17 @@ const SectionReturnMobile = styled.section`
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  @media (min-width: 1000px) {
+    display: none;
+  }
+`;
+
+const GoContactDesk = styled(NavLink)`
+  text-decoration: none;
+`;
+const GoContact = styled(NavLink)`
+  text-decoration: none;
+  color: white;
 `;
 
 const Contact = () => {
@@ -163,9 +176,11 @@ const Contact = () => {
   return (
     <>
       <Main value={theme}>
-        <SectionReturn>
-          <Return>Volver</Return>
-        </SectionReturn>
+        <GoContactDesk to={"/"}>
+          <SectionReturn>
+            <Return>Volver</Return>
+          </SectionReturn>
+        </GoContactDesk>
         <Form onSubmit={handleSubmit} value={theme}>
           <SectionContactMe>
             <H2 value={theme}>Contactame</H2>
@@ -219,9 +234,11 @@ const Contact = () => {
           />
         </Form>
         <MenuBottom />
-        <SectionReturnMobile>
-          <Return>Volver</Return>
-        </SectionReturnMobile>
+        <GoContact to={"/"}>
+          <SectionReturnMobile>
+            <Return>Volver</Return>
+          </SectionReturnMobile>
+        </GoContact>
       </Main>
     </>
   );

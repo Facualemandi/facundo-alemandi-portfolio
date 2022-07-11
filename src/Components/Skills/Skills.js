@@ -100,13 +100,13 @@ const ParragraphFirebase = styled.p`
   }
 `;
 
-const Skills = () => {
+const Skills = ({isSkills}) => {
   const { theme } = useThemeMode();
 
   return (
     <>
       <Main valor={theme}>
-        <H2 valor={theme}>Tecnologías 📊</H2>
+        <H2 valor={theme} ref={isSkills}>Tecnologías 📊</H2>
         <Parragraph valor={theme}>
           Actualmente las tecnologías que manejo son :
         </Parragraph>

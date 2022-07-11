@@ -7,6 +7,7 @@ import GitHub from "../../Images/github.png";
 import { FcBusinessContact } from "react-icons/fc";
 import NavDesktop from "./NavDesktop";
 import { useThemeMode } from "../../Context/themeContext";
+import { NavLink } from "react-router-dom";
 
 const HeaderMe = styled.header`
   display: flex;
@@ -140,6 +141,7 @@ const ButtonContact = styled.button`
   font-family: "Montserrat", sans-serif;
   border-radius: 7px;
   color: white;
+  padding: 5px;
 `;
 
 const IconContact = styled(FcBusinessContact)`
@@ -168,6 +170,10 @@ const ButtomDesktop = styled.button`
   }
 `;
 
+const GoContact = styled(NavLink)`
+  text-decoration: none;
+`;
+
 const Header = () => {
   const { theme } = useThemeMode();
 
@@ -194,9 +200,11 @@ const Header = () => {
             <ImgRedes alt="" src={GitHub} />
           </SectionRedes>
 
-          <ButtonContact>
-            Contactarme <IconContact />
-          </ButtonContact>
+          <GoContact to="/Contact">
+            <ButtonContact>
+              Contactarme <IconContact />
+            </ButtonContact>
+          </GoContact>
         </SectionTwo>
       </HeaderMe>
     </>
