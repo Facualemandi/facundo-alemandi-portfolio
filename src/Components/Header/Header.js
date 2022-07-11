@@ -195,9 +195,30 @@ const Header = () => {
 
         <SectionTwo>
           <SectionRedes valor={theme}>
-            <ImgRedes alt="" src={Linkedin} />
-            <ImgRedes alt="" src={Twitter} />
-            <ImgRedes alt="" src={GitHub} />
+            <a
+              href="https://www.linkedin.com/in/facundo-alemandi-4714a7233/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <ImgRedes alt="" src={Linkedin} />
+            </a>
+            <a
+              href="https://twitter.com/AlemandiFacundo"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <ImgRedes
+                alt="https://twitter.com/AlemandiFacundo"
+                src={Twitter}
+              />
+            </a>
+            <a
+              href="https://github.com/Facualemandi"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <ImgRedes alt="Github" src={GitHub} />
+            </a>
           </SectionRedes>
 
           <GoContact to="/Contact">

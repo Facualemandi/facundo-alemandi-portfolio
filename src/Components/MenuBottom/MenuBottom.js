@@ -107,7 +107,7 @@ const MenuBottom = ({ handleAbout, handleSkills, handleProject }) => {
           <NavLink to={"/Contact"}>
             <BtnContact />
           </NavLink>
-          
+
           <Hamburger
             size={50}
             rounded

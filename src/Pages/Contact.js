@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import MenuBottom from "../Components/MenuBottom/MenuBottom";
 import { useThemeMode } from "../Context/themeContext";
 import { useForm } from "../Hooks/useForm";
 import { NavLink } from "react-router-dom";
+import Linkedin from "./ContactImg/linkedin.png";
+import Twitter from "./ContactImg/Twitter-logo.png";
+import GitHub from "./ContactImg/github.png";
+import Instagram from "./ContactImg/instagram.png";
 
 const initialForm = {
   name: "",
@@ -164,6 +167,34 @@ const GoContactDesk = styled(NavLink)`
 const GoContact = styled(NavLink)`
   text-decoration: none;
   color: white;
+  margin-top: 15px;
+`;
+
+const ContianerRedes = styled.section`
+  background-color: rgb(70 84 126);
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: 0.5s;
+
+  @media (min-width: 1000px) {
+    width: 50vw;
+  }
+`;
+const ImgRedes = styled.img`
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  @media (min-width: 1000px) {
+    cursor: pointer;
+    &&:hover {
+      box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+      transition: 0.3s;
+    }
+  }
 `;
 
 const Contact = () => {
@@ -233,7 +264,14 @@ const Contact = () => {
             isValue={theme}
           />
         </Form>
-        <MenuBottom />
+
+        <ContianerRedes>
+          <ImgRedes alt="Linkedin" src={Linkedin} />
+          <ImgRedes alt="Twitter" src={Twitter} />
+          <ImgRedes alt="GitHub" src={GitHub} />
+          <ImgRedes alt="Instagram" src={Instagram} />
+        </ContianerRedes>
+
         <GoContact to={"/"}>
           <SectionReturnMobile>
             <Return>Volver</Return>
