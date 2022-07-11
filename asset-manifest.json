@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/facundo-alemandi-portfolio/static/css/main.6d3f3f0f.css",
+    "main.js": "/facundo-alemandi-portfolio/static/js/main.f9ae83b2.js",
+    "static/media/project1.png": "/facundo-alemandi-portfolio/static/media/project1.40183bd6f502ab8fcc80.png",
+    "static/media/Technology.png": "/facundo-alemandi-portfolio/static/media/Technology.e0f32b070f72d967fc3d.png",
+    "static/media/fake-store-clothing.png": "/facundo-alemandi-portfolio/static/media/fake-store-clothing.474c77fc1dc888c0a813.png",
+    "static/media/project3.png": "/facundo-alemandi-portfolio/static/media/project3.355e21cb1b7e3487274e.png",
+    "static/media/FacundoAlemandi.png": "/facundo-alemandi-portfolio/static/media/FacundoAlemandi.259159bb2a9f96bb1b0f.png",
+    "static/media/instagram.png": "/facundo-alemandi-portfolio/static/media/instagram.0963b7a591227164566c.png",
+    "static/media/ApiCountry.png": "/facundo-alemandi-portfolio/static/media/ApiCountry.af36ffe35c528100f437.png",
+    "static/media/react.png": "/facundo-alemandi-portfolio/static/media/react.e648a71158884495e955.png",
+    "static/media/StyledC.png": "/facundo-alemandi-portfolio/static/media/StyledC.fbb11a4eb3c084942657.png",
+    "static/media/Twitter-logo.png": "/facundo-alemandi-portfolio/static/media/Twitter-logo.d2bb8231b1ce7c1f8922.png",
+    "static/media/icon-dark.png": "/facundo-alemandi-portfolio/static/media/icon-dark.e81d957086fa618ddfa2.png",
+    "static/media/git-icon.png": "/facundo-alemandi-portfolio/static/media/git-icon.db538452a3fb6ffbc088.png",
+    "static/media/css.png": "/facundo-alemandi-portfolio/static/media/css.8192306775acb6d56596.png",
+    "index.html": "/facundo-alemandi-portfolio/index.html",
+    "main.6d3f3f0f.css.map": "/facundo-alemandi-portfolio/static/css/main.6d3f3f0f.css.map",
+    "main.f9ae83b2.js.map": "/facundo-alemandi-portfolio/static/js/main.f9ae83b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d3f3f0f.css",
+    "static/js/main.f9ae83b2.js"
+  ]
+}

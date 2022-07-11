@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.6d3f3f0f.css","mappings":"AAAA,EAGE,qBAAsB,CAFtB,QAAS,CAGT,iBAAkB,CAFlB,SAIF","sources":["index.css"],"sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  overflow-x: hidden;\r\n\r\n}\r\n"],"names":[],"sourceRoot":""}
