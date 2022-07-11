@@ -120,6 +120,7 @@ const ContainerDeploy = styled.section`
 
   @media (min-width: 1000px) {
     width: max-content;
+    cursor: pointer;
   }
 `;
 
@@ -233,13 +234,25 @@ const Projects = () => {
 
               <SectionDeploy value={projectOne}>
                 <DeployYGithub>
-                  <GitDeploy>
-                    <Icon1 />
-                    Deploy
-                  </GitDeploy>
-                  <GitDeploy>
-                    <Icon /> GitHub
-                  </GitDeploy>
+                  <a
+                    href="https://facualemandi.github.io/technology-commerce/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon1 />
+                      Deploy
+                    </GitDeploy>
+                  </a>
+                  <a
+                    href=" https://github.com/Facualemandi/technology-commerce"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon /> GitHub
+                    </GitDeploy>
+                  </a>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -269,13 +282,26 @@ const Projects = () => {
 
               <SectionDeploy value={projectTwo}>
                 <DeployYGithub>
-                  <GitDeploy>
-                    <Icon1 />
-                    Deploy
-                  </GitDeploy>
-                  <GitDeploy>
-                    <Icon /> GitHub
-                  </GitDeploy>
+                  <a
+                    href="https://facualemandi.github.io/fake-store-clothing/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon1 />
+                      Deploy
+                    </GitDeploy>
+                  </a>
+
+                  <a
+                    href="https://github.com/Facualemandi/fake-store-clothing"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon /> GitHub
+                    </GitDeploy>
+                  </a>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -305,13 +331,25 @@ const Projects = () => {
 
               <SectionDeploy value={projectThree}>
                 <DeployYGithub>
-                  <GitDeploy>
-                    <Icon1 />
-                    Deploy
-                  </GitDeploy>
-                  <GitDeploy>
-                    <Icon /> GitHub
-                  </GitDeploy>
+                  <a
+                    href="https://facualemandi.github.io/marketplace-alfareria/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon1 />
+                      Deploy
+                    </GitDeploy>
+                  </a>
+                  <a
+                    href="https://github.com/Facualemandi/marketplace-alfareria"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon /> GitHub
+                    </GitDeploy>
+                  </a>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -341,13 +379,25 @@ const Projects = () => {
 
               <SectionDeploy value={projectFour}>
                 <DeployYGithub>
-                  <GitDeploy>
-                    <Icon1 />
-                    Deploy
-                  </GitDeploy>
-                  <GitDeploy>
-                    <Icon /> GitHub
-                  </GitDeploy>
+                  <a
+                    href="https://facualemandi.github.io/api-country/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon1 />
+                      Deploy
+                    </GitDeploy>
+                  </a>
+                  <a
+                    href="https://github.com/Facualemandi/api-country"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon /> GitHub
+                    </GitDeploy>
+                  </a>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>
@@ -377,13 +427,25 @@ const Projects = () => {
 
               <SectionDeploy value={projectFive}>
                 <DeployYGithub>
-                  <GitDeploy>
-                    <Icon1 />
-                    Deploy
-                  </GitDeploy>
-                  <GitDeploy>
-                    <Icon /> GitHub
-                  </GitDeploy>
+                  <a
+                    href="https://facualemandi.github.io/mercadolibre-dos-copy/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon1 />
+                      Deploy
+                    </GitDeploy>
+                  </a>
+                  <a
+                    href="https://github.com/Facualemandi/mercadolibre-dos-copy"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <GitDeploy>
+                      <Icon /> GitHub
+                    </GitDeploy>
+                  </a>
                 </DeployYGithub>
               </SectionDeploy>
             </ContainerDeploy>

@@ -1,34 +1,16 @@
-
-import { AboutMe } from "./Components/AboutMe/AboutMe";
-import Header from "./Components/Header/Header";
-import MenuBottom from "./Components/MenuBottom/MenuBottom";
-import Projects from "./Components/Projects/Projects";
-import Skills from "./Components/Skills/Skills";
+import { Routes, Route } from "react-router-dom";
 import { ThemeMode } from "./Context/themeContext";
-import { useSmooth } from "./Hooks/useSmooth";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home/Home";
 
 function App() {
-  const {
-    isAboutMe,
-    isProjects,
-    isSkills,
-    handleAbout,
-    handleSkills,
-    handleProject,
-  } = useSmooth();
-
   return (
     <>
       <ThemeMode>
-        <Header />
-        <AboutMe isAboutMe={isAboutMe} />
-        <Skills isSkills={isSkills} />
-        <Projects isProjects={isProjects} />
-        <MenuBottom
-          handleAbout={handleAbout}
-          handleSkills={handleSkills}
-          handleProject={handleProject}
-        />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
       </ThemeMode>
     </>
   );
