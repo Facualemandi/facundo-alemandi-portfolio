@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Technology from "../../Images/Technology.png";
 import FakeStoreClothing from "../../Images/fake-store-clothing.png";
@@ -6,6 +6,8 @@ import Alfareria from "../../Images/project1.png";
 import Countryes from "../../Images/ApiCountry.png";
 import MercadoLibre from "../../Images/project3.png";
 import { VscDebugBreakpointData } from "react-icons/vsc";
+import { FcClapperboard } from "react-icons/fc";
+import { FaGithubSquare } from "react-icons/fa";
 import { useThemeMode } from "../../Context/themeContext";
 
 const Main = styled.main`
@@ -106,17 +108,100 @@ const ContainerDesktop = styled.section`
   }
 `;
 
-const NameProject = styled.p`
+const ContainerDeploy = styled.section`
   width: 90vw;
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  @media (min-width: 800px) {
+    width: 65vw;
+  }
+
+  @media (min-width: 1000px) {
+    width: max-content;
+  }
+`;
+
+const SectionDeploy = styled.section`
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 94.5%;
+  background-color: rgba(0, 0, 0, 0.549);
+  display: ${({ value }) => (!value ? "none" : "block")};
+  @media (min-width: 800px) {
+    width: 65vw;
+    height: 500px;
+  }
+  @media (min-width: 1150px) {
+    width: 400px;
+    height: 400px;
+  }
+  @media (min-width: 1350px) {
+    width: 430px;
+    height: 430px;
+  }
+  @media (min-width: 1500px) {
+    width: 35vw;
+    height: 450px;
+  }
+`;
+
+const GitDeploy = styled.p`
   font-family: "Montserrat", sans-serif;
-  font-size: 26px;
-  font-weight: bold;
-  color: #66c7ff;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(68, 68, 68, 0.393);
+  margin-top: 10px;
+  width: max-content;
+`;
+
+const Icon = styled(FaGithubSquare)`
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  color: white;
+`;
+const Icon1 = styled(FcClapperboard)`
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+`;
+
+const DeployYGithub = styled.section`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Projects = () => {
   const { theme } = useThemeMode();
+  const [projectOne, setProjectOne] = useState(false);
+  const [projectTwo, setProjectTwo] = useState(false);
+  const [projectThree, setProjectThree] = useState(false);
+  const [projectFour, setProjectFour] = useState(false);
+  const [projectFive, setProjectFive] = useState(false);
+
+  const firstProject = () =>
+    !projectOne ? setProjectOne(true) : setProjectOne(false);
+  const twoProject = () =>
+    !projectTwo ? setProjectTwo(true) : setProjectTwo(false);
+  const threeProject = () =>
+    !projectThree ? setProjectThree(true) : setProjectThree(false);
+  const fourProject = () =>
+    !projectFour ? setProjectFour(true) : setProjectFour(false);
+  const fiveProject = () =>
+    !projectFive ? setProjectFive(true) : setProjectFive(false);
 
   return (
     <>
@@ -143,9 +228,21 @@ const Projects = () => {
               </Li>
             </Ul>
 
-            <section>
+            <ContainerDeploy onClick={firstProject}>
               <ImgOne alt="Technology-Commerce" src={Technology} />
-            </section>
+
+              <SectionDeploy value={projectOne}>
+                <DeployYGithub>
+                  <GitDeploy>
+                    <Icon1 />
+                    Deploy
+                  </GitDeploy>
+                  <GitDeploy>
+                    <Icon /> GitHub
+                  </GitDeploy>
+                </DeployYGithub>
+              </SectionDeploy>
+            </ContainerDeploy>
           </SectionOne>
 
           <SectionOne>
@@ -167,9 +264,21 @@ const Projects = () => {
               </Li>
             </Ul>
 
-            <section>
+            <ContainerDeploy onClick={twoProject}>
               <ImgOne alt="Technology-Commerce" src={FakeStoreClothing} />
-            </section>
+
+              <SectionDeploy value={projectTwo}>
+                <DeployYGithub>
+                  <GitDeploy>
+                    <Icon1 />
+                    Deploy
+                  </GitDeploy>
+                  <GitDeploy>
+                    <Icon /> GitHub
+                  </GitDeploy>
+                </DeployYGithub>
+              </SectionDeploy>
+            </ContainerDeploy>
           </SectionOne>
 
           <SectionOne>
@@ -191,9 +300,21 @@ const Projects = () => {
               </Li>
             </Ul>
 
-            <section>
+            <ContainerDeploy onClick={threeProject}>
               <ImgOne alt="Technology-Commerce" src={Alfareria} />
-            </section>
+
+              <SectionDeploy value={projectThree}>
+                <DeployYGithub>
+                  <GitDeploy>
+                    <Icon1 />
+                    Deploy
+                  </GitDeploy>
+                  <GitDeploy>
+                    <Icon /> GitHub
+                  </GitDeploy>
+                </DeployYGithub>
+              </SectionDeploy>
+            </ContainerDeploy>
           </SectionOne>
 
           <SectionOne>
@@ -215,9 +336,21 @@ const Projects = () => {
               </Li>
             </Ul>
 
-            <section>
+            <ContainerDeploy onClick={fourProject}>
               <ImgOne alt="Technology-Commerce" src={Countryes} />
-            </section>
+
+              <SectionDeploy value={projectFour}>
+                <DeployYGithub>
+                  <GitDeploy>
+                    <Icon1 />
+                    Deploy
+                  </GitDeploy>
+                  <GitDeploy>
+                    <Icon /> GitHub
+                  </GitDeploy>
+                </DeployYGithub>
+              </SectionDeploy>
+            </ContainerDeploy>
           </SectionOne>
 
           <SectionOne>
@@ -239,9 +372,21 @@ const Projects = () => {
               </Li>
             </Ul>
 
-            <section>
+            <ContainerDeploy onClick={fiveProject}>
               <ImgOne alt="Technology-Commerce" src={MercadoLibre} />
-            </section>
+
+              <SectionDeploy value={projectFive}>
+                <DeployYGithub>
+                  <GitDeploy>
+                    <Icon1 />
+                    Deploy
+                  </GitDeploy>
+                  <GitDeploy>
+                    <Icon /> GitHub
+                  </GitDeploy>
+                </DeployYGithub>
+              </SectionDeploy>
+            </ContainerDeploy>
           </SectionOne>
         </ContainerDesktop>
       </Main>

@@ -22,6 +22,9 @@ const Nav = styled.nav`
   max-height: 60px;
   position: fixed;
   bottom: 0px;
+  @media (min-width: 1000px) {
+    display: none;
+  }
 `;
 
 const Container = styled.section`
@@ -51,6 +54,9 @@ const ContainerMenu = styled.section`
   bottom: ${({ isOpen }) => (!isOpen ? "-100px" : "59px")};
   background-color: ${({ valor }) => (!valor ? "rgb(30, 45, 78)" : "#959696")};
   transition: 0.5s;
+  @media (min-width: 1000px) {
+    display: none;
+  }
 `;
 
 const Li = styled.li`
@@ -84,7 +90,7 @@ const MenuBottom = ({ handleAbout, handleSkills, handleProject }) => {
 
   return (
     <>
-      <ContainerMenu isOpen={isOpen} valor={theme}> 
+      <ContainerMenu isOpen={isOpen} valor={theme}>
         <ul>
           <Li onClick={handleSkills}>
             <Icons2 /> Tecnologías
