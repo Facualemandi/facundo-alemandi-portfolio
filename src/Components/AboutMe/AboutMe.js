@@ -66,13 +66,13 @@ export const AboutMe = ({ isAboutMe }) => {
             Sobre Mi 📗
           </H2>
           <Parraagraph valor={theme}>
-            Me llamo <Bold valor={theme}>Facundo Alemandi</Bold>, soy de{" "}
-            <Bold valor={theme}>Argentina, Córdoba Capital</Bold> y Me
-            especializo en <Bold valor={theme}>Desarrollo Frontend</Bold>. A
-            finales de 2021 (1 de diciembre) empecé a aprender programación.
-            Comencé con los conceptos básicos <Bold valor={theme}>HTML</Bold>,{" "}
-            <Bold valor={theme}>CSS</Bold>, Después seguí con{" "}
-            <Bold valor={theme}>JavaScript</Bold>,{" "}
+            Me llamo <Bold valor={theme}>Facundo Alemandi</Bold>, soy GitDeploy
+            <Bold valor={theme}>Argentina, Córdoba Capital</Bold> y me
+            especializo en <Bold valor={theme}>Desarrollo Frontend.</Bold>
+            estudié programación de manera autodidacta, comencé con los conceptos
+            básicos <Bold valor={theme}>HTML</Bold>,GitDeploy
+            <Bold valor={theme}>CSS</Bold>, Después seguí conGitDeploy
+            <Bold valor={theme}>JavaScript</Bold>,GitDeploy
             <Bold valor={theme}>Git</Bold>,<Bold valor={theme}> Github </Bold>y
             actualmente estoy usando <Bold valor={theme}>React</Bold>. Mi
             objetivo es obtener mi primera experiencia laboral como
