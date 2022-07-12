@@ -30,19 +30,15 @@ const H2 = styled.p`
 `;
 
 const SectionOne = styled.section`
-  width: 85vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-top: 30px;
 
-  @media (min-width: 800px) {
-    width: 65vw;
-  }
-
-  @media (min-width: 1000px) {
-    width: max-content;
-    padding: 10px;
+  @media (min-width: 1250px) {
+    width: 600px;
+    margin: 0;
   }
 `;
 
@@ -66,26 +62,12 @@ const Li = styled.li`
 `;
 
 const ImgOne = styled.img`
-  width: 85vw;
-  height: 400px;
+  width: 90vw;
+  height: 500px;
   border-radius: 10px;
 
-  @media (min-width: 800px) {
-    width: 65vw;
-    height: 500px;
-  }
-
-  @media (min-width: 1150px) {
-    width: 400px;
-    height: 400px;
-  }
-  @media (min-width: 1350px) {
-    width: 430px;
-    height: 430px;
-  }
-  @media (min-width: 1500px) {
-    width: 35vw;
-    height: 450px;
+  @media (min-width: 1250px) {
+    width: 600px;
   }
 `;
 
@@ -95,9 +77,12 @@ const Point = styled(VscDebugBreakpointData)`
 `;
 
 const ContainerDesktop = styled.section`
-  @media (min-width: 1150px) {
-    width: 75vw;
-    margin: auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  @media (min-width: 1250px) {
+    width: 1250px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -109,13 +94,11 @@ const ContainerDeploy = styled.section`
   flex-direction: column;
   margin: auto;
   position: relative;
-  @media (min-width: 800px) {
-    width: 65vw;
-  }
 
-  @media (min-width: 1000px) {
-    width: max-content;
-    cursor: pointer;
+  @media (min-width: 1250px) {
+    width: 600px;
+
+    margin: 0;
   }
 `;
 
@@ -127,22 +110,6 @@ const SectionDeploy = styled.section`
   width: 94.5%;
   background-color: rgba(0, 0, 0, 0.549);
   display: ${({ value }) => (!value ? "none" : "block")};
-  @media (min-width: 800px) {
-    width: 65vw;
-    height: 500px;
-  }
-  @media (min-width: 1150px) {
-    width: 400px;
-    height: 400px;
-  }
-  @media (min-width: 1350px) {
-    width: 430px;
-    height: 430px;
-  }
-  @media (min-width: 1500px) {
-    width: 35vw;
-    height: 450px;
-  }
 `;
 
 const GitDeploy = styled.p`
@@ -200,6 +167,6 @@ export const StylesProject = () => {
     Icon,
     Icon1,
     DeployYGithub,
-    LinkToDeploy
+    LinkToDeploy,
   };
 };

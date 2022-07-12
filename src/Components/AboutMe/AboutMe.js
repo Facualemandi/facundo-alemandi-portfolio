@@ -14,20 +14,23 @@ const SectionOne = styled.section`
   flex-direction: column;
   margin: auto;
   padding-top: 15px;
+  @media (min-width: 1250px) {
+    width: 1250px;
+  }
 `;
 
 const H2 = styled.h2`
   font-size: 28px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  width: 85vw;
+  width: 90vw;
   margin: auto;
   letter-spacing: 3px;
   color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5")};
   transition: 0.5s;
 
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1200px) {
+    width: 1250px;
   }
 `;
 
@@ -41,11 +44,12 @@ const Parraagraph = styled.p`
   line-height: 1.5;
   margin: auto;
   margin-top: 15px;
-  width: 85vw;
-  @media (min-width: 800px) {
-    width: 65vw;
+  width: 90vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
+
 const Bold = styled.b`
   color: ${({ valor }) => (!valor ? "#66c7ff" : "#ff7cbe")};
   transition: 0.5s;
@@ -53,7 +57,6 @@ const Bold = styled.b`
 
 export const AboutMe = ({ isAboutMe }) => {
   const { theme } = useThemeMode();
-
 
   return (
     <>

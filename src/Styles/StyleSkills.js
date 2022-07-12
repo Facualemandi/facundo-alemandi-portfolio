@@ -15,24 +15,23 @@ const H2 = styled.h2`
   letter-spacing: 3px;
   padding-top: 15px;
   padding-bottom: 10px;
-  width: 85vw;
+  width: 90vw;
   color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5;")};
   transition: 0.5s;
 
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
 const Parragraph = styled.p`
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  width: 85vw;
+  width: 90vw;
   margin: auto;
   color: ${({ valor }) => (!valor ? "white" : "black")};
   transition: 0.5s;
-
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
 
@@ -42,7 +41,7 @@ const ImgSkills = styled.img`
 `;
 
 const SectionOne = styled.section`
-  width: 85vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -52,8 +51,8 @@ const SectionOne = styled.section`
   margin-top: 15px;
   background-color: ${({ valor }) => (!valor ? "rgb(25, 33, 56)" : "#d2d3d4")};
   transition: 0.5s;
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
 
@@ -81,14 +80,14 @@ const NameSkill = styled.p`
 const ParragraphFirebase = styled.p`
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  width: 85vw;
+  width: 90vw;
   margin: auto;
   margin-top: 5px;
   color: ${({ valor }) => (!valor ? "white" : "black")};
   transition: 0.5s;
 
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
 
@@ -102,6 +101,6 @@ export const StyleSkills = () => {
     ContianerSkills,
     SectionSkillsIcons,
     NameSkill,
-    ParragraphFirebase
-  }
+    ParragraphFirebase,
+  };
 };
