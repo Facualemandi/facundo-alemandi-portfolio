@@ -21,11 +21,11 @@ const H2 = styled.p`
   letter-spacing: 3px;
   padding-bottom: 15px;
   transition: 1s;
-  width: 85vw;
+  width: 90vw;
   padding-top: 20px;
 
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
 
@@ -68,6 +68,7 @@ const ImgOne = styled.img`
 
   @media (min-width: 1250px) {
     width: 600px;
+    cursor: pointer;
   }
 `;
 
@@ -110,6 +111,9 @@ const SectionDeploy = styled.section`
   width: 94.5%;
   background-color: rgba(0, 0, 0, 0.549);
   display: ${({ value }) => (!value ? "none" : "block")};
+  @media (min-width: 1250px) {
+    width: 600px;
+  }
 `;
 
 const GitDeploy = styled.p`
@@ -146,6 +150,10 @@ const DeployYGithub = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1250px) {
+    width: 600px;
+  }
 `;
 
 const LinkToDeploy = styled.a`
