@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/facundo-alemandi-portfolio/static/css/main.6d3f3f0f.css",
-    "main.js": "/facundo-alemandi-portfolio/static/js/main.59fb9620.js",
+    "main.js": "/facundo-alemandi-portfolio/static/js/main.14254432.js",
     "static/media/project1.png": "/facundo-alemandi-portfolio/static/media/project1.40183bd6f502ab8fcc80.png",
     "static/media/Technology.png": "/facundo-alemandi-portfolio/static/media/Technology.e0f32b070f72d967fc3d.png",
     "static/media/fake-store-clothing.png": "/facundo-alemandi-portfolio/static/media/fake-store-clothing.474c77fc1dc888c0a813.png",
@@ -17,10 +17,10 @@
     "static/media/css.png": "/facundo-alemandi-portfolio/static/media/css.8192306775acb6d56596.png",
     "index.html": "/facundo-alemandi-portfolio/index.html",
     "main.6d3f3f0f.css.map": "/facundo-alemandi-portfolio/static/css/main.6d3f3f0f.css.map",
-    "main.59fb9620.js.map": "/facundo-alemandi-portfolio/static/js/main.59fb9620.js.map"
+    "main.14254432.js.map": "/facundo-alemandi-portfolio/static/js/main.14254432.js.map"
   },
   "entrypoints": [
     "static/css/main.6d3f3f0f.css",
-    "static/js/main.59fb9620.js"
+    "static/js/main.14254432.js"
   ]
 }
