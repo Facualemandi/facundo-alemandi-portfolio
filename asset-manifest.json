@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/facundo-alemandi-portfolio/static/css/main.6d3f3f0f.css",
-    "main.js": "/facundo-alemandi-portfolio/static/js/main.b3d47009.js",
+    "main.js": "/facundo-alemandi-portfolio/static/js/main.6266af14.js",
     "static/media/project1.png": "/facundo-alemandi-portfolio/static/media/project1.40183bd6f502ab8fcc80.png",
     "static/media/Technology.png": "/facundo-alemandi-portfolio/static/media/Technology.e0f32b070f72d967fc3d.png",
     "static/media/fake-store-clothing.png": "/facundo-alemandi-portfolio/static/media/fake-store-clothing.474c77fc1dc888c0a813.png",
-    "static/media/Portfolio.png": "/facundo-alemandi-portfolio/static/media/Portfolio.52e45e2b66d6c67159f5.png",
+    "static/media/Portfolio.png": "/facundo-alemandi-portfolio/static/media/Portfolio.567f9e33f2a92bde9094.png",
     "static/media/project3.png": "/facundo-alemandi-portfolio/static/media/project3.355e21cb1b7e3487274e.png",
     "static/media/FacundoAlemandi.png": "/facundo-alemandi-portfolio/static/media/FacundoAlemandi.259159bb2a9f96bb1b0f.png",
     "static/media/instagram.png": "/facundo-alemandi-portfolio/static/media/instagram.0963b7a591227164566c.png",
@@ -17,10 +17,10 @@
     "static/media/css.png": "/facundo-alemandi-portfolio/static/media/css.8192306775acb6d56596.png",
     "index.html": "/facundo-alemandi-portfolio/index.html",
     "main.6d3f3f0f.css.map": "/facundo-alemandi-portfolio/static/css/main.6d3f3f0f.css.map",
-    "main.b3d47009.js.map": "/facundo-alemandi-portfolio/static/js/main.b3d47009.js.map"
+    "main.6266af14.js.map": "/facundo-alemandi-portfolio/static/js/main.6266af14.js.map"
   },
   "entrypoints": [
     "static/css/main.6d3f3f0f.css",
-    "static/js/main.b3d47009.js"
+    "static/js/main.6266af14.js"
   ]
 }
