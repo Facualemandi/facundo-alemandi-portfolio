@@ -20,7 +20,7 @@ const SectionOne = styled.section`
 `;
 
 const H2 = styled.h2`
-  font-size: 28px;
+  font-size: 35px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   width: 90vw;

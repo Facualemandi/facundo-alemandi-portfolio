@@ -7,7 +7,7 @@ const Main = styled.main`
   transition: 0.5s;
 `;
 const H2 = styled.h2`
-  font-size: 26px;
+  font-size: 35px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   width: 85vw;
@@ -19,7 +19,7 @@ const H2 = styled.h2`
   color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5;")};
   transition: 0.5s;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media (min-width: 1250px) {
     width: 1250px;

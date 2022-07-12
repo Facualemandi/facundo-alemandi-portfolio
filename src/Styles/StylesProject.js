@@ -14,7 +14,7 @@ const Main = styled.main`
 const H2 = styled.p`
   color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5;")};
   transition: 0.5s;
-  font-size: 26px;
+  font-size: 35px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin: auto;
