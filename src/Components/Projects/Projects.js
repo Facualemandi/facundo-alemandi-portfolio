@@ -27,6 +27,12 @@ const {
   LinkToDeploy,
 } = StylesProject();
 
+const ProjectName = styled.p`
+ font-size: 28px;
+ font-family: 'Montserrat', sans-serif;
+ color: #66c7ff;
+`
+
 const Projects = ({ isProjects }) => {
   const { theme } = useThemeMode();
   const {
@@ -52,21 +58,11 @@ const Projects = ({ isProjects }) => {
         <ContainerDesktop>
           <SectionOne>
             <Ul valor={theme}>
-              <Li>
-                <Point /> E-Commerce
-              </Li>
-              <Li>
-                <Point /> Proyecto con Login y Register
-              </Li>
-              <Li>
-                <Point /> Hecho con React, React router
-              </Li>
-              <Li>
-                <Point /> Styled Components
-              </Li>
-              <Li>
-                <Point /> Base de datos hecha con Firebase
-              </Li>
+              <ProjectName>E-Commerce de Tecnología</ProjectName>
+              <Li><Point /> Proyecto con Login y Register</Li>
+              <Li><Point /> Hecho con React, React router</Li>
+              <Li><Point /> Styled Components</Li>
+              <Li><Point /> Base de datos hecha con Firebase</Li>
             </Ul>
 
             <ContainerDeploy onClick={firstProject}>
@@ -100,21 +96,11 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li>
-                <Point /> E-Commerce{" "}
-              </Li>
-              <Li>
-                <Point /> Proyecto personal
-              </Li>
-              <Li>
-                <Point /> Hecho con React, React router
-              </Li>
-              <Li>
-                <Point /> Vanilla Css
-              </Li>
-              <Li>
-                <Point /> Base de datos hecha con Firebase
-              </Li>
+            <ProjectName>E-Commerce de productos de ropa</ProjectName>
+              <Li> <Point /> Proyecto personal </Li>
+              <Li> <Point /> Hecho con React, React router </Li>
+              <Li>  <Point /> Vanilla Css </Li>
+              <Li> <Point /> Base de datos hecha con Firebase </Li>
             </Ul>
 
             <ContainerDeploy onClick={twoProject}>
@@ -148,21 +134,11 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li>
-                <Point /> Proyecto personal
-              </Li>
-              <Li>
-                <Point /> Hecho principalmente para Mobile.
-              </Li>
-              <Li>
-                <Point /> Listo para hacer pedidos por WhatsApp
-              </Li>
-              <Li>
-                <Point /> Hecho con React, React-router
-              </Li>
-              <Li>
-                <Point /> Vanilla Css
-              </Li>
+            <ProjectName>E-Commerce de productos de alfarería</ProjectName>
+              <Li> <Point /> Hecho principalmente para Mobile. </Li>
+              <Li> <Point /> Listo para hacer pedidos por WhatsApp </Li>
+              <Li> <Point /> Hecho con React, React-router </Li>
+              <Li> <Point /> Vanilla Css </Li>
             </Ul>
 
             <ContainerDeploy onClick={threeProject}>
@@ -196,21 +172,11 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li>
-                <Point /> PortFolio
-              </Li>
-              <Li>
-                <Point /> Figma
-              </Li>
-              <Li>
-                <Point /> Hecho para Mobile y Desktop
-              </Li>
-              <Li>
-                <Point /> Hecho con React, React-router
-              </Li>
-              <Li>
-                <Point /> Styled Components
-              </Li>
+            <ProjectName>Mi Portfolio</ProjectName>
+              <Li> <Point /> Figma </Li>
+              <Li> <Point /> Hecho para Mobile y Desktop </Li>
+              <Li> <Point /> Hecho con React, React-router </Li>
+              <Li> <Point /> Styled Components </Li>
             </Ul>
 
             <ContainerDeploy onClick={fourProject}>
@@ -244,18 +210,10 @@ const Projects = ({ isProjects }) => {
 
           <SectionOne>
             <Ul valor={theme}>
-              <Li>
-                <Point /> Copia de Mercado Libre
-              </Li>
-              <Li>
-                <Point /> Hecho con React
-              </Li>
-              <Li>
-                <Point /> Vanilla Css
-              </Li>
-              <Li>
-                <Point /> Hecho para Mobile y Desktop{" "}
-              </Li>
+            <ProjectName>Copia de Mercado Libre</ProjectName>
+              <Li> <Point /> Hecho con React </Li>
+              <Li> <Point /> Vanilla Css </Li>
+              <Li> <Point /> Hecho para Mobile y Desktop{" "} </Li>
             </Ul>
 
             <ContainerDeploy onClick={fiveProject}>
