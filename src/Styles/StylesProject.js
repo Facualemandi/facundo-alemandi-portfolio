@@ -23,6 +23,8 @@ const H2 = styled.p`
   transition: 1s;
   width: 90vw;
   padding-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 
   @media (min-width: 1250px) {
     width: 1250px;
@@ -39,6 +41,7 @@ const SectionOne = styled.section`
   @media (min-width: 1250px) {
     width: 600px;
     margin: 0;
+    margin-bottom: 50px;
   }
 `;
 

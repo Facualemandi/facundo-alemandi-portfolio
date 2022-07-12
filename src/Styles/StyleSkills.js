@@ -18,6 +18,8 @@ const H2 = styled.h2`
   width: 90vw;
   color: ${({ valor }) => (!valor ? "#5af5ff" : "#ee5ca5;")};
   transition: 0.5s;
+  margin-top: 40px;
+  margin-bottom: 20px;
 
   @media (min-width: 1250px) {
     width: 1250px;
