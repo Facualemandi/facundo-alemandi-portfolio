@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { FcBusinessContact } from "react-icons/fc";
 import { NavLink } from "react-router-dom";
 
-
 const HeaderMe = styled.header`
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@ const HeaderMe = styled.header`
 
 const SectionOne = styled.section`
   display: flex;
-  width: 85vw;
+  width: 90vw;
   margin: auto;
   animation: moveleft 1s ease-in-out;
 
@@ -33,8 +32,8 @@ const SectionOne = styled.section`
     text-align: center;
   }
 
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
 
@@ -184,5 +183,5 @@ export const StyleHeader = () => {
     IconContact,
     ButtomDesktop,
     GoContact,
-  }
+  };
 };

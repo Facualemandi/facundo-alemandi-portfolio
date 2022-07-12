@@ -35,6 +35,7 @@ const ProjectName = styled.p`
 
 const Projects = ({ isProjects }) => {
   const { theme } = useThemeMode();
+  
   const {
     projectOne,
     projectTwo,

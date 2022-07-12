@@ -21,14 +21,14 @@ const Nav = styled.nav`
 const SectionTwo = styled.section`
   display: flex;
   justify-content: space-between;
-  width: 85vw;
+  width: 90vw;
   margin: auto;
   animation: moveleft 1s ease-in-out;
   margin-bottom: 15px;
   margin-top: 15px;
 
-  @media (min-width: 800px) {
-    width: 65vw;
+  @media (min-width: 1250px) {
+    width: 1250px;
   }
 `;
 
