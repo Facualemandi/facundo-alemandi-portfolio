@@ -97,16 +97,11 @@ const ImgRedes = styled.img`
 
 const SectionTwo = styled.section`
   display: flex;
-  width: 85vw;
+  width: 90vw;
   margin: auto;
   animation: moveleft 1s ease-in-out;
   margin-bottom: 15px;
   margin-top: 15px;
-
-  @media (min-width: 800px) {
-    width: 65vw;
-  }
-
   @media (min-width: 1000px) {
     display: none;
   }
@@ -161,6 +156,7 @@ const ButtomDesktop = styled.button`
     padding: 5px;
     font-weight: bold;
     cursor: pointer;
+
   }
 `;
 

@@ -111,9 +111,10 @@ const SectionDeploy = styled.section`
   position: absolute;
   top: 0px;
   height: 100%;
-  width: 94.5%;
+  width: 90vw;
   background-color: rgba(0, 0, 0, 0.549);
   display: ${({ value }) => (!value ? "none" : "block")};
+
   @media (min-width: 1250px) {
     width: 600px;
   }
