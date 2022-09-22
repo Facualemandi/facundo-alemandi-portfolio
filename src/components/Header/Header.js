@@ -9,49 +9,43 @@ const TheHeader = styled.header`
   background-color: rgb(16, 23, 29);
 `;
 const Container = styled.section`
-  border: 1px solid blue;
   width: 100%;
   display: flex;
   margin: auto;
   padding: 5px;
-  div {
-    margin-left: 10px;
-  }
 
-  
-@media (max-width: 430px){
-   flex-direction: column;
-   width: 90vw;
-}
+  @media (max-width: 430px) {
+    flex-direction: column;
+    width: 90vw;
+  }
   @media (min-width: 730px) {
     width: max-content;
   }
   @media (min-width: 1080px) {
     width: 1080px;
   }
-  @media (min-width: 1308px) {
-    width: 1308px;
+  @media (min-width: 1380px) {
+    width: 1380px;
   }
 `;
 
 const Image = styled.img`
   width: 200px;
 
-  @media (max-width: 430px){
-   width: 90vw;
-   margin: auto;
-   padding: 25px;
-   border-radius: 10px;
-}
+  @media (max-width: 430px) {
+    width: 90vw;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+  }
 
   @media (min-width: 730px) {
     width: 270px;
   }
-  
 `;
 
 const Name = styled.p`
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(138, 180, 248);
@@ -65,14 +59,14 @@ const Name = styled.p`
 `;
 
 const Position = styled.p`
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(138, 180, 248);
   font-size: 7vw;
   width: 100%;
   margin-top: 10px;
 
   @media (min-width: 730px) {
-    font-size: 70px;
+    font-size: 60px;
   }
 `;
 
@@ -85,11 +79,14 @@ const IconLink = styled(FaLinkedin)`
   color: rgb(138, 180, 248);
   width: 50px;
   height: 50px;
+  margin-left: 30px;
 `;
 const DivIcons = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 15px;
+`;
+
+const SectionHeader = styled.section`
+  margin-left: 15px;
 `;
 
 const Header = () => {
@@ -98,7 +95,7 @@ const Header = () => {
       <Container>
         <Image alt="" src={FacuAlemandi} />
 
-        <div>
+        <SectionHeader>
           <Name>Facundo</Name>
           <Name>Alemandi</Name>
           <Position>Rect Developer</Position>
@@ -107,7 +104,7 @@ const Header = () => {
             <IconGithub />
             <IconLink />
           </DivIcons>
-        </div>
+        </SectionHeader>
       </Container>
     </TheHeader>
   );
