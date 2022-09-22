@@ -36,7 +36,7 @@ const Container = styled.section`
   align-items: center;
   margin: 10px;
   border-radius: 10px;
-  background-color: #0d141a;
+  background-color: #1d2a34;
 `;
 
 const Skills = styled.h2`

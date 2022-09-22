@@ -16,10 +16,11 @@ const Container = styled.section`
 
   @media (max-width: 430px) {
     flex-direction: column;
-    width: 90vw;
+    width: 100vw;
   }
-  @media (min-width: 730px) {
+  @media (min-width: 780px) {
     width: max-content;
+    width: 780px;
   }
   @media (min-width: 1080px) {
     width: 1080px;
@@ -53,6 +54,10 @@ const Name = styled.p`
   font-size: 9vw;
   letter-spacing: 2px;
 
+  @media (max-width: 430px) {
+    font-size: 55px;
+  }
+
   @media (min-width: 730px) {
     font-size: 70px;
   }
@@ -83,10 +88,15 @@ const IconLink = styled(FaLinkedin)`
 `;
 const DivIcons = styled.div`
   display: flex;
+  margin-top: 20px;
 `;
 
 const SectionHeader = styled.section`
-  margin-left: 15px;
+  @media (max-width: 430px) {
+    margin-left: 0;
+    padding: 10px;
+  }
+    margin-left: 15px;
 `;
 
 const Header = () => {
