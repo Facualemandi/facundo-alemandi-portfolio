@@ -73,17 +73,17 @@ const theProjects = [
     deploy: "https://facualemandi.github.io/aerolab-commerce/",
     github: "https://github.com/Facualemandi/aerolab-commerce",
   },
-    {
-      title: "Portfolio",
-      img: `${PORTFOLIO}`,
-      items: {
-        item1: "Hecho para Mobile y Desktop",
-        item2: "Hecho con React",
-        item3: "Hecho con Styled Components",
-      },
-      deploy: "https://facundo-alemandi-portfolio.vercel.app/",
-      github: "https://github.com/Facualemandi/facundo-alemandi-portfolio",
+  {
+    title: "Portfolio",
+    img: `${PORTFOLIO}`,
+    items: {
+      item1: "Hecho para Mobile y Desktop",
+      item2: "Hecho con React",
+      item3: "Hecho con Styled Components",
     },
+    deploy: "https://facundo-alemandi-portfolio.vercel.app/",
+    github: "https://github.com/Facualemandi/facundo-alemandi-portfolio",
+  },
 ];
 
 const ContainerAll = styled.section`
@@ -158,13 +158,12 @@ const DivOpacity = styled.div`
   padding: 10px;
   border-radius: 20px;
   display: none;
-  padding-top: 15%;
+  padding-top: 10%;
   p {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    border: 1px solid white;
     width: max-content;
     margin: 10px auto;
     padding: 5px;
@@ -198,9 +197,15 @@ const IconDeploy = styled(MdSlideshow)`
 `;
 
 const Link = styled.a`
- text-decoration: none;
- color: white;
-`
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+`;
 
 const Projects = () => {
   return (
@@ -224,8 +229,26 @@ const Projects = () => {
             <ContainerImg>
               <Img alt={project.title} src={project.img} />
               <DivOpacity>
-                <Link href={project.github} rel="noopener noreferrer" target={'_blank'} > <p> Github <IconGithub /></p></Link>
-                <Link href={project.deploy} rel="noopener noreferrer" target={'_blank'}> <p> Deploy <IconDeploy /></p></Link> 
+                <p>
+                  <Link
+                    href={project.github}
+                    rel="noopener noreferrer"
+                    target={"_blank"}
+                  >
+                    {" "}
+                    Github <IconGithub />
+                  </Link>
+                </p>
+                <p>
+                  <Link
+                    href={project.deploy}
+                    rel="noopener noreferrer"
+                    target={"_blank"}
+                  >
+                    {" "}
+                    Deploy <IconDeploy />
+                  </Link>
+                </p>
               </DivOpacity>
             </ContainerImg>
           </ContainerProjects>
