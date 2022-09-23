@@ -112,8 +112,8 @@ const Header = () => {
           <Position>Rect Developer</Position>
 
           <DivIcons>
-            <IconGithub />
-            <IconLink />
+            <a href="https://github.com/Facualemandi" target={'_blank'} rel='noreferrer'> <IconGithub /></a>
+            <a href="https://www.linkedin.com/in/facundo-alemandi-4714a7233/" target={'_blank'} rel='noreferrer'><IconLink /></a>
           </DivIcons>
         </SectionHeader>
       </Container>
