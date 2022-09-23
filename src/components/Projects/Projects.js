@@ -1,12 +1,12 @@
 import React from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import { MdSlideshow } from "react-icons/md";
-import MOVIE from "../images/Movies.png";
-import TECHNOLOGY from "../images/Technology.png";
-import ANIME from "../images/Anime.png";
-import ALFARERIA from "../images/Alfareria.png";
-import AEROLAB from "../images/Aerolab.png";
-import PORTFOLIO from "../images/Portfolio.png";
+import MOVIE from "../../images/Movies.png";
+import TECHNOLOGY from "../../images/Technology.png";
+import ANIME from "../../images/Anime.png";
+import ALFARERIA from "../../images/Alfareria.png";
+import AEROLAB from "../../images/Aerolab.png";
+import PORTFOLIO from "../../images/Portfolio.png";
 import styled from "styled-components";
 
 const theProjects = [
@@ -132,6 +132,7 @@ const Project = styled.h2`
   font-size: 45px;
   padding-top: 30px;
   padding-bottom: 30px;
+  scroll-margin-top: 60px;
   @media (max-width: 780px) {
     padding: 15px;
   }
@@ -204,7 +205,7 @@ const Link = styled.a`
 const Projects = () => {
   return (
     <Main>
-      <Project>Proyectos 🎬</Project>
+      <Project id="proyects">Proyectos 🎬</Project>
       <ContainerAll>
         {theProjects.map((project) => (
           <ContainerProjects>

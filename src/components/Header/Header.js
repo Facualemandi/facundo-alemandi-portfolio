@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 const TheHeader = styled.header`
   height: auto;
   background-color: rgb(16, 23, 29);
+  padding-top: 65px;
 `;
 const Container = styled.section`
   width: 100%;

@@ -33,6 +33,7 @@ const H2 = styled.h2`
   color: #8ab4f8;
   transition: 0.5s;
   width: max-content;
+  scroll-margin-top: 60px;
 `;
 
 const Parraagraph = styled.p`
@@ -60,7 +61,7 @@ export const AboutMe = () => {
     <>
       <Main>
         <SectionOne>
-          <H2>Sobre Mi 📗</H2>
+          <H2 id="aboutme">Sobre Mi 📗</H2>
           <Parraagraph>
             Me llamo <Bold>Facundo Alemandi</Bold>, soy de{" "}
             <Bold> Argentina, Córdoba Capital</Bold> y Me especializo en
