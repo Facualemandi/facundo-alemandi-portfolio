@@ -73,17 +73,17 @@ const theProjects = [
     deploy: "https://facualemandi.github.io/aerolab-commerce/",
     github: "https://github.com/Facualemandi/aerolab-commerce",
   },
-  //   {
-  //     title: "Portfolio",
-  //     img: `${PORTFOLIO}`,
-  //     items: {
-  //       item1: "Hecho para Mobile y Desktop",
-  //       item2: "Hecho con React",
-  //       item3: "Hecho con Styled Components",
-  //     },
-  //     deploy: "https://facualemandi.github.io/aerolab-commerce/",
-  //     github: "https://github.com/Facualemandi/aerolab-commerce",
-  //   },
+    {
+      title: "Portfolio",
+      img: `${PORTFOLIO}`,
+      items: {
+        item1: "Hecho para Mobile y Desktop",
+        item2: "Hecho con React",
+        item3: "Hecho con Styled Components",
+      },
+      deploy: "https://facundo-alemandi-portfolio.vercel.app/",
+      github: "https://github.com/Facualemandi/facundo-alemandi-portfolio",
+    },
 ];
 
 const ContainerAll = styled.section`
