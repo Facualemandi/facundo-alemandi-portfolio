@@ -13,7 +13,7 @@ const Container = styled.section`
   width: 100%;
   display: flex;
   margin: auto;
-  padding: 5px;
+  padding: 10px;
 
   @media (max-width: 430px) {
     flex-direction: column;
@@ -32,6 +32,7 @@ const Container = styled.section`
 
 const Image = styled.img`
   width: 200px;
+  border-radius: 15px;
 
   @media (max-width: 430px) {
     width: 90vw;

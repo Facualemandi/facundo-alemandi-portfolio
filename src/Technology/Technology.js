@@ -43,11 +43,9 @@ const Skills = styled.h2`
   font-family: "Roboto", sans-serif;
   color: #8ab4f8;
   font-size: 45px;
-  padding-top: 30px;
   scroll-margin-top: 60px;
-  @media (max-width: 780px) {
-    padding: 15px;
-  }
+  padding-top: 30px;
+    padding: 10px;
   @media (min-width: 780px) {
     margin: auto;
     grid-template-columns: repeat(3, 1fr);

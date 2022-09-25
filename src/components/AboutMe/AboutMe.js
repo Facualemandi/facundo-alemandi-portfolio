@@ -28,6 +28,7 @@ const H2 = styled.h2`
   transition: 0.5s;
   width: max-content;
   scroll-margin-top: 60px;
+  padding: 10px;
 `;
 
 const Parraagraph = styled.p`
@@ -39,11 +40,8 @@ const Parraagraph = styled.p`
   transition: 0.5s;
   letter-spacing: 1px;
   line-height: 1.5;
-  margin-top: 15px;
   width: 100%;
-  @media (min-width: 1250px) {
-    width: 100%;
-  }
+  padding: 10px;
 `;
 
 const Bold = styled.b`

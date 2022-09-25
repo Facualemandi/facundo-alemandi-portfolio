@@ -87,9 +87,11 @@ const theProjects = [
 ];
 
 const ContainerAll = styled.section`
+ padding: 10px;
   @media (min-width: 600px) and (max-width: 1080px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
   }
   @media (min-width: 1080px) {
     display: grid;
@@ -130,6 +132,7 @@ const Project = styled.h2`
   font-family: "Roboto", sans-serif;
   color: #8ab4f8;
   font-size: 45px;
+  padding: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
   scroll-margin-top: 60px;

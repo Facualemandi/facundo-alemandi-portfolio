@@ -9,6 +9,7 @@ const TheNav = styled.nav`
   min-height: 60px;
   width: 100vw;
   background-color: rgb(34, 54, 88);
+  z-index: 5000;
   @media (max-width: 781px) {
     justify-content: flex-end;
   }
