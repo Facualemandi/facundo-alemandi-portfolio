@@ -20,14 +20,13 @@ const Container = styled.section`
     width: 100vw;
   }
   @media (min-width: 780px) {
-    width: max-content;
-    width: 780px;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: 1080px) {
-    width: 1080px;
-  }
-  @media (min-width: 1380px) {
-    width: 1380px;
+    max-width: 1380px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
   }
 `;
 

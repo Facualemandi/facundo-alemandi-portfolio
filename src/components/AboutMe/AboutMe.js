@@ -8,20 +8,14 @@ const Main = styled.main`
 `;
 
 const SectionOne = styled.section`
-  width: 95vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  margin: auto;
   padding-top: 15px;
 
-  @media (min-width: 780px) {
-    width: 780px;
-  }
   @media (min-width: 1080px) {
-    width: 1080px;
-  }
-  @media (min-width: 1380px) {
-    width: 1380px;
+    max-width: 1380px;
+    margin: auto;
   }
 `;
 

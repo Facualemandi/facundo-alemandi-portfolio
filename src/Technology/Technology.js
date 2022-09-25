@@ -49,16 +49,13 @@ const Skills = styled.h2`
     padding: 15px;
   }
   @media (min-width: 780px) {
-    width: 780px;
     margin: auto;
-  }
-  @media (min-width: 1080px) {
-    width: 1080px;
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (min-width: 1380px) {
-    width: 1380px;
+  @media (min-width: 1080px) {
+    max-width: 1380px;
     grid-template-columns: repeat(4, 1fr);
+    margin: auto;
   }
 `;
 
@@ -68,18 +65,15 @@ const ContainerAll = styled.section`
   color: white;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-
+  
   @media (min-width: 780px) {
-    width: 780px;
     margin: auto;
-  }
-  @media (min-width: 1080px) {
-    width: 1080px;
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (min-width: 1380px) {
-    width: 1380px;
+  @media (min-width: 1080px) {
+    max-width: 1380px;
     grid-template-columns: repeat(4, 1fr);
+    margin: auto;
   }
 `;
 

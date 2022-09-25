@@ -206,7 +206,7 @@ const Projects = () => {
       <Project id="proyects">Proyectos 🎬</Project>
       <ContainerAll>
         {theProjects.map((project) => (
-          <ContainerProjects>
+          <ContainerProjects key={project.title}>
             <Title>{project.title}</Title>
 
             <Ul>

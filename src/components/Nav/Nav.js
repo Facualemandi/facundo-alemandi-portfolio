@@ -9,10 +9,10 @@ const TheNav = styled.nav`
   min-height: 60px;
   width: 100vw;
   background-color: rgb(34, 54, 88);
-  @media (max-width: 780px) {
+  @media (max-width: 781px) {
     justify-content: flex-end;
   }
-  @media (min-width: 780px) {
+  @media (min-width: 781px) {
     display: flex;
     justify-content: center;
   }
@@ -23,7 +23,7 @@ const TheNav = styled.nav`
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 780px) {
+    @media (min-width: 781px) {
       display: none;
     }
   }
@@ -44,7 +44,7 @@ const Ul = styled.ul`
     z-index: 1000;
     background-color: rgb(34, 54, 88);
   }
-  @media (min-width: 780px) {
+  @media (min-width: 781px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
