@@ -136,17 +136,10 @@ const Project = styled.h2`
   @media (max-width: 780px) {
     padding: 15px;
   }
-  @media (min-width: 780px) {
-    width: 780px;
-    margin: auto;
-  }
-  @media (min-width: 1080px) {
-    width: 1080px;
-    grid-template-columns: repeat(3, 1fr);
-  }
   @media (min-width: 1380px) {
     width: 1380px;
     grid-template-columns: repeat(4, 1fr);
+    margin: auto;
   }
 `;
 
