@@ -109,7 +109,7 @@ const Header = () => {
         <SectionHeader>
           <Name>Facundo</Name>
           <Name>Alemandi</Name>
-          <Position>Rect Developer</Position>
+          <Position>React Developer</Position>
 
           <DivIcons>
             <a href="https://github.com/Facualemandi" target={'_blank'} rel='noreferrer'> <IconGithub /></a>
