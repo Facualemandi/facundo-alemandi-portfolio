@@ -70,8 +70,8 @@ const theProjects = [
       item3: "Hecho con Styled Components",
       item4: "Hecho con React Query",
     },
-    deploy: "https://facualemandi.github.io/aerolab-commerce/",
-    github: "https://github.com/Facualemandi/aerolab-commerce",
+    deploy: "https://facualemandi.github.io/fakecommerce/",
+    github: "https://github.com/Facualemandi/fakecommerce",
   },
   {
     title: "Portfolio",
